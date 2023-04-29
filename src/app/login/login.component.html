@@ -31,5 +31,11 @@
       Google Auth
     </button>
 
+    <button mat-raised-button class="google-auth-btn" color="warn"
+            *ngIf="isUserAuthenticated()"
+            (click)="logout()">
+      Logout
+    </button>
+
   </div>
 </div>

@@ -42,7 +42,7 @@ import { RegisterComponent } from './register/register.component';
     MatButtonModule,
     MatIconModule,
     ToastrModule.forRoot({
-      positionClass :'toast-bottom-right'
+      positionClass :'toast-top-left'
     })
   ],
   providers: [

@@ -39,10 +39,21 @@ export class LoginComponent implements OnInit {
 
   loginWithGoogle() {
     this.authService.googleLogin()
-      .then(() => {
-        this.toastr.success("success");
+      .then((user) => {
+        this.toastr.success("Hello " + user?.displayName);
         this.loginForm.reset();
       });
+  }
+
+  logout() {
+    this.authService.logout()
+      .then(() => {
+        this.toastr.success("Bye! See you soon.");
+      });
+  }
+
+  isUserAuthenticated() {
+    return this.authService.isUserAuthenticated();
   }
 
 }

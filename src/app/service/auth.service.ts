@@ -57,4 +57,8 @@ export class AuthService {
       throw error;
     }
   }
+
+  isUserAuthenticated(): boolean {
+    return this.user != null;
+  }
 }

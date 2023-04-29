@@ -53,3 +53,7 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.mat-mdc-text-field-wrapper {
+  border-radius: 10px !important;
+}
