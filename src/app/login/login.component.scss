@@ -1,0 +1,27 @@
+.login-form-div {
+  width: 40%;
+  text-align: center;
+  background: #bdc1cb;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.02) 0px 50px 100px -20px, rgba(0, 0, 0, 0.18) 0px 30px 60px -30px;
+}
+
+.form-group {
+  padding: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-field {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.login-btn, .google-auth-btn {
+  margin: 10px;
+  width: 80%;
+  font-weight: bold;
+  font-size: medium;
+  height: 45px;
+}

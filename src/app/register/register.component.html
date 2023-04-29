@@ -1,0 +1,30 @@
+<div class="login-form-div center">
+  <h1 style="text-align: center">Register</h1>
+
+  <div class="form-group">
+    <form [formGroup]="registerForm">
+      <mat-form-field appearance="fill" class="form-field">
+        <input placeholder="E-mail" formControlName="email" matInput [type]="'text'" name="new-somename"
+               autocomplete="noac">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-field">
+        <input placeholder="Password" formControlName="password" matInput [type]="hide ? 'password' : 'text'"
+               name="new-somename" autocomplete="noac">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button color="primary" class="login-btn"
+            (click)="registerWithEmail()" [disabled]="registerForm.invalid">
+      Register
+    </button>
+
+    <p>Back to <a routerLink="/login" class="btn btn-link">Login</a></p>
+
+  </div>
+</div>
